@@ -1,0 +1,75 @@
+.wrapper {
+  height: 608px;
+  display: flex;
+  align-items: stretch;
+
+  .left__side {
+    height: 100%;
+    width: 25%;
+    color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    @media screen and (max-width: 1100px) {
+      width: 30%;
+    }
+
+    @media screen and (max-width: 990px) {
+      display: none;
+    }
+  }
+
+  .right__side {
+    width: 85%;
+    height: 100%;
+    overflow-y: hidden;
+
+    @media screen and (max-width: 1100px) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: 990px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 2560px) {
+    height: 608px;
+  }
+
+  @media screen and (max-width: 1535px) {
+    height: 506px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    height: 405px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    height: 367px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    height: 275px;
+  }
+
+  @media screen and (max-width: 455px) {
+    height: 237px;
+  }
+
+  @media screen and (max-width: 350px) {
+    height: 185px;
+  }
+}

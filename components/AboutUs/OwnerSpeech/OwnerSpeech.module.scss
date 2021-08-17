@@ -1,0 +1,103 @@
+.owner__info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    padding: 10px 0;
+    font-size: 30px;
+    color: #13488e;
+    font-weight: 600;
+
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: 420px) {
+      font-size: 18px;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
+
+    .imageBox {
+      position: relative;
+      height: 400px;
+      width: 40%;
+      overflow: hidden;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .person {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        padding: 10px;
+        background: #fff;
+        border-radius: 10px;
+
+        h2 {
+          font-size: 20px;
+          color: rgb(36, 33, 33);
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        p {
+          text-transform: uppercase;
+          color: #bfa601;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+    .details {
+      width: 60%;
+      padding-top: 10px;
+
+      p {
+        color: rgb(49, 49, 49);
+        font-size: 20px;
+        font-weight: 500;
+        text-align: justify;
+
+        @media screen and (max-width: 420px) {
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        padding-top: 0;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 320px) {
+      gap: 0px;
+    }
+  }
+}

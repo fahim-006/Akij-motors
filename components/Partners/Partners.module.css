@@ -1,0 +1,15 @@
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 150px;
+}
+
+.headline {
+  text-align: center;
+  padding: 10px;
+  color: #14478d;
+  font-size: 35px;
+  font-weight: bold;
+}

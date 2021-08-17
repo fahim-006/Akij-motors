@@ -1,0 +1,35 @@
+.searchBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 5px 15px 5px 10px;
+  border-radius: 30px;
+
+  input {
+    font-size: 16px;
+    padding: 2.5px 0;
+    outline: none;
+    border: none;
+    color: #030b22;
+    font-weight: 400;
+
+    &::placeholder {
+      color: #ccc;
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  svg {
+    fill: rgb(102, 102, 102);
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+  }
+}

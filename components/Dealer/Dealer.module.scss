@@ -1,0 +1,82 @@
+.dealer__wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600 !important;
+  background: url("../../public/contact/imgpsh_fullsize_anim.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Dealer__content {
+  padding: 50px 0;
+  .Dealer__information {
+    padding: 20px 0;
+  }
+}
+.DealerInformation__content {
+  .DealerInformation__title {
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #13488e;
+  }
+}
+
+.dealer__card {
+  margin-top: 20px;
+  .dealer__image {
+    position: relative;
+    .dealer__image_overtext {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.425));
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .dealer__image_text {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .dealer__info {
+    display: flex;
+
+    h6 {
+      span {
+        margin-right: 6px;
+      }
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .dealer__address {
+    display: flex;
+
+    h6 {
+      span {
+        margin-right: 6px;
+      }
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+
+.listname {
+  @media screen and (max-width: 599px) {
+    font-size: 12px !important;
+  }
+}

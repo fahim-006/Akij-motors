@@ -1,0 +1,17 @@
+.headline {
+  font-size: 25px;
+  color: #14478d;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.topic {
+  font-size: 20px;
+  font-weight: 500;
+  color: #14478d;
+  margin-left: 10px;
+}
+
+.description {
+  font-size: 16px;
+}

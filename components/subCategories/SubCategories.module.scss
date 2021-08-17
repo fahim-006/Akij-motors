@@ -1,0 +1,21 @@
+.subCategories__wrapper {
+  margin: 50px 0;
+  .subCategories__content {
+    background: #f7fafc;
+    .subCategories__title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 30px;
+      color: #14478d;
+    }
+    .subCategories__button {
+      margin: 20px 0;
+      button {
+        width: 150px;
+        background: #fb5d5e;
+        color: #fff;
+      }
+    }
+  }
+}

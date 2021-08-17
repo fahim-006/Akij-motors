@@ -1,0 +1,26 @@
+.car__wrapper {
+  margin: 20px 0;
+  background: #fff;
+  padding: 0px 15px 50px 15px;
+  min-height: 50vh;
+}
+
+.headline {
+  text-align: center;
+  padding: 10px;
+  color: #14478d;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.card__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card__item div:hover {
+  cursor: pointer;
+}

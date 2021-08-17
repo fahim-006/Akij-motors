@@ -1,0 +1,15 @@
+Contact us ---> size 55, medium, #DAE9F2
+
+Let's start ---> size 40, Semibold, #13488E
+
+name, mail, p.no & message ---> size 30, regular, #000000
+
+text field er text ---> size 25, regular, #909194
+
+submit ---> size 25, regular,
+
+get in touch ---> size 62, medium, #DAE9F2
+
+address, phone & mail ---> size 40, semi bold, #FFFFFF
+
+address, phone & mail er body part ---> size 25, regular, #FFFFFF

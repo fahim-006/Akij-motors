@@ -1,0 +1,24 @@
+.faq__wrapper {
+  background: #13488e;
+  min-height: 150px;
+  display: flex;
+  color: #fff;
+  .faq__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .faq__info {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+}
+
+// question__wrapper
+.question__wrapper {
+  padding: 60px 0;
+}

@@ -1,0 +1,46 @@
+.wrapper {
+  background: #f7fafc;
+  min-height: 50vh;
+  padding: 50px 10px 50px 10px;
+  color: #14478d;
+  display: grid;
+  place-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.wrapper p {
+  font-size: 20px;
+  font-size: bolder;
+  padding-bottom: 10px;
+}
+
+.underline {
+  height: 10px;
+  width: 10%;
+  background: #14478d;
+}
+
+.testimonial {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 100px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .testimonial {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
