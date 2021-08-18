@@ -2,6 +2,7 @@
   background: none !important;
 
   .sidebarLink {
+
     display: flex;
     color: #cccccc;
     padding: 5px 10px;
@@ -11,7 +12,8 @@
     align-items: center;
     list-style: none;
     text-decoration: none;
-
+    width: 290px;
+   
     &:hover {
       background: #fb5d5e;
       color: #fff;
@@ -28,6 +30,7 @@
     align-items: center;
     list-style: none;
     text-decoration: none;
+    width: 290px;
 
     &:hover {
       background: #fb5d5e;

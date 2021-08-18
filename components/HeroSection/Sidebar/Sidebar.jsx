@@ -9,13 +9,15 @@ import SubMenu
 const Sidebar = () => {
   
   return (
-   <>
+    <div>
       {sideBarData.map((menu, index) => (
-        <>
-               <SubMenu item={menu} key={index} />        
-        </>
+     
+            <SubMenu item={menu} key={index} /> 
+        
+                     
+       
       ))}
-    </>
+    </div>
   );
 };
 

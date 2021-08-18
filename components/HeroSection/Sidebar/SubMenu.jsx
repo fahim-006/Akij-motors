@@ -10,7 +10,7 @@ const SubMenu = ({ item }) => {
 
   return (
     <div className={classes.sidebar} onMouseLeave={()=>showsubMenu(false)}>
-    <>  
+    
         <a className={classes.sidebarLink} onMouseOver={()=>showsubMenu(true) && item.subMenu} >      
         {item.name}
         {item.iconOpen}
@@ -25,8 +25,7 @@ const SubMenu = ({ item }) => {
             </div>
           );
         })}
-    </>
-    </div>
+   </div> 
   );
 };
 

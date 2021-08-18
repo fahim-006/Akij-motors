@@ -17,11 +17,11 @@ const HeaderBottom = ({ show, isShow }) => {
 
   return (
     <>
-      <div className="relative z-50 w-full text-white bg-gradient-to-br from-akij-blue to-akij-lblue">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <div className="pl-2 pr-3 text-xl cursor-pointer " onClick={show}>
+      <div className="relative z-50 w-full text-white bg-gradient-to-br from-akij-blue to-akij-lblue" >
+        <div className="container mx-auto" >
+          <div className="flex items-center justify-between" >
+            <div className="flex items-center" >
+              <div className="pl-2 pr-3 text-xl cursor-pointer " onClick={show} >
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
