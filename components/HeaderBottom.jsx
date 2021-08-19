@@ -11,7 +11,7 @@ const HeaderBottom = ({ show, isShow }) => {
     'garage equipment',
     'spare parts',
     'electric motorcycle',
-    'forklit/stacker',
+    'forklit /stacker',
     'construction machinary',
     'special vehicle',
   ];
