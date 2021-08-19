@@ -3,8 +3,7 @@ import Link from 'next/link';
 // import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io';
 import { sideBarData } from '../../../sidebardata';
 import classes from './Sidebar.module.scss';
-import SubMenu
- from './SubMenu';
+import SubMenu from './SubMenu';
 
 const Sidebar = () => {
   

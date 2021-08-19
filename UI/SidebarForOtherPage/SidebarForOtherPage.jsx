@@ -4,9 +4,12 @@ import classes from './SidebarForOtherPage.module.scss';
 
 const SidebarForOtherPage = () => {
   return (
-    <div className={classes.sidebar__otherPages}>
+    <ul className={classes.sidebar__otherPages}>
+      <li>
       <Sidebar />
-    </div>
+      </li>
+      
+    </ul>
   );
 };
 
