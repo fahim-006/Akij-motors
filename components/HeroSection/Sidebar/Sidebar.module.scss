@@ -1,8 +1,7 @@
 .sidebar {
-  background: none !important;
+  background: none !important;  
   
   .sidebarLink {
-
     display: flex;
     color: #cccccc;
     padding: 5px 10px;
@@ -10,7 +9,7 @@
     border-bottom: 1px solid #b0caf3;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
+    list-style: none;    
     text-decoration: none;
     width: 290px;
    
@@ -20,7 +19,7 @@
     }
   }
 
-  .dropdownLink {
+  .dropdownLink {    
     display: block;
     color: #414141;
     padding: 5px 10px 5px 15px;
@@ -38,7 +37,6 @@
     }
   }
 
-
   .pro-sidebar {
     width: 100% !important;
   }
@@ -49,4 +47,11 @@
     align-items: center;
     justify-content: space-between;
   }
+}
+
+@media screen and (max-width: 1290px) {
+  .sidebar{
+    color: violet;
+  }
+  
 }

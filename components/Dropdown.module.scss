@@ -3,33 +3,26 @@
     top: 2.2vw;
     list-style: none;
     text-align: start;
-    height: 504px;
-  }
+    max-height: 608px;
+    overflow-x: scroll;
   
-  .dropdownamenu li {
-    background: #1888ff;
-    cursor: pointer;
-  }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
   
-  .dropdownamenu li:hover {
-    background: #ffffff;
-  }
+    /* Track */
   
-  .dropdownamenuclicked {
-    display: none;
-    height: 504px;
-  }
+    &::-webkit-scrollbar-track {
+      background: #5f74b8;
+    }
   
-  .dropdownalink {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    color: #fff;
-    padding: 16px;
-  }
+    /* Handle */
   
- 
+    &::-webkit-scrollbar-thumb {
+      background: rgb(0, 81, 255);
+    }
+}
 
   @media screen and (max-width: 1190px){
     .dropdownamenu {
@@ -37,7 +30,8 @@
         top: 2.5vw;
         list-style: none;
         text-align: start;
-        height: 504px;
+        max-height: 504px;
+        overflow-x: scroll;
       }
    
   }
@@ -48,7 +42,8 @@
         top: 3vw;
         list-style: none;
         text-align: start;
-        height: 504px;
+        max-height: 504px;
+        overflow-x: scroll;
       }
     
   }
@@ -59,17 +54,19 @@
             top: 3.4vw;
             list-style: none;
             text-align: start;
-            height: 504px;
+            max-height: 504px;
+            overflow-x: scroll;
           }
       
     }
 @media screen and (max-width: 750px){
     .dropdownamenu {
         position: absolute;
-        top: 6vw;
+        top: 7vw;
         list-style: none;
         text-align: start;
-        height: 504px;
+        max-height: 504px;
+        overflow-x: scroll;
       }
         
   }
@@ -82,7 +79,8 @@
         top: 6.9vw;
         list-style: none;
         text-align: start;
-        height: 504px;
+        max-height: 504px;
+        overflow-x: scroll;
       }
   
   }
