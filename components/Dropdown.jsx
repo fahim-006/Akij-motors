@@ -12,13 +12,12 @@ function Dropdown() {
   return (
     <>
       <ul
-        
+        style={{}}
         onClick={handleClick}
-        className={classes.click ? classes.dropdownamenuclicked : classes.dropdownamenu}
-      >
+        className={classes.click ? classes.dropdownamenuclicked : classes.dropdownamenu}>
         {sideBarData.map((item, index) => {
           return (
-            <li key={index} >
+            <li  key={index} >
              
                 <SubMenu item={item} key={index} />
              
