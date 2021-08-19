@@ -60,7 +60,7 @@ const HeaderBottom = ({ show, isShow }) => {
                     strokeWidth="48"
                     d="M88 152h336M88 256h336M88 360h336"
                   ></path>
-                </svg>
+                </svg>&nbsp; &nbsp; 
                 {dropdown && <Dropdown />}
             </li>
             <li
@@ -86,7 +86,7 @@ const HeaderBottom = ({ show, isShow }) => {
                  <li className={classes.navaitemOther}
                   key={i}
                 >
-                 &nbsp; {item} &nbsp;  &nbsp;
+                 &nbsp;&nbsp; &nbsp;  {item} &nbsp;  &nbsp;
                   </li> ))}
           
          
