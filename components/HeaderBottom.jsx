@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import classes from './HeaderBottom.module.scss';
 import Dropdown from './Dropdown';
-import SidebarForOtherPage from '../UI/SidebarForOtherPage/SidebarForOtherPage';
+
 
 const HeaderBottom = ({ show, isShow }) => {
   const data = [
@@ -21,7 +21,13 @@ const HeaderBottom = ({ show, isShow }) => {
 
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
+  const onMouseClick = () => {
+    const location = window.location.href;
+    var arr = location.split("/");
+
+     if(arr[arr.length -1] == "" ||arr[arr.length -1] == "#" ){
+      setDropdown(dropdown => dropdown=false);
+    }else
      setDropdown(dropdown => !dropdown);
   };
 
@@ -34,7 +40,7 @@ const HeaderBottom = ({ show, isShow }) => {
 
         <li
             className={classes.navaitemSVG}
-            onClick={onMouseEnter}
+            onClick={onMouseClick}
             
           >
              <svg
@@ -59,11 +65,11 @@ const HeaderBottom = ({ show, isShow }) => {
             </li>
             <li
             className={classes.navaitem}
-            onClick={onMouseEnter}
+            onClick={onMouseClick}
             style={{marginRight: "70px"}}        
           >
             <a
-              href='#'
+              
               className={classes.navalinks}
               onClick={closeMobileMenu}
               style={{ fontWeight: "bold"}}
