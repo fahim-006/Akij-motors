@@ -11,7 +11,7 @@ const HeaderBottom = ({ show, isShow }) => {
     'garage equipment',
     'spare parts',
     'electric motorcycle',
-    'forklit /stacker',
+    'forklit/stacker',
     'construction machinary',
     'special vehicle',
   ];
@@ -21,27 +21,33 @@ const HeaderBottom = ({ show, isShow }) => {
 
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseClick = () => {
+  const onMouseClick = (leave) => {
     const location = window.location.href;
     var arr = location.split("/");
 
      if(arr[arr.length -1] == "" ||arr[arr.length -1] == "#" ){
       setDropdown(dropdown => dropdown=false);
-    }else
-     setDropdown(dropdown => !dropdown);
+    }else if (leave=="hideDropdown"){
+      setDropdown(dropdown => dropdown=false);
+    }else{
+      setDropdown(dropdown => !dropdown);
+    }
+     
   };
 
   return (
     <>
+    
     <div className="relative z-50 w-full text-white bg-gradient-to-br from-akij-blue to-akij-lblue">
-      <nav className={classes.navbar}>
+      
         
-        <ul id="idForHide" className={click ? classes.navamenuactive  : classes.navamenu}>
+        <ul id="idForHide" className={classes.navamenu}>
 
         <li
-            className={classes.navaitemSVG}
-            onClick={onMouseClick}
-            
+             className={classes.navaitemSVG}
+             onClick={()=>onMouseClick()}
+             onMouseLeave={()=>onMouseClick("hideDropdown")}
+             style={{marginRight: "70px"}}    
           >
              <svg
                   stroke="currentColor"
@@ -60,40 +66,19 @@ const HeaderBottom = ({ show, isShow }) => {
                     strokeWidth="48"
                     d="M88 152h336M88 256h336M88 360h336"
                   ></path>
-                </svg>&nbsp; &nbsp; 
+                </svg> <a style={{fontWeight: "bold"}} className={classes.navaitem}>CATEGORIES</a> 
                 {dropdown && <Dropdown />}
             </li>
-            <li
-            className={classes.navaitem}
-            onClick={onMouseClick}
-            style={{marginRight: "70px"}}        
-          >
-            <a
-              
-              className={classes.navalinks}
-              onClick={closeMobileMenu}
-              style={{ fontWeight: "bold"}}
-            >
-             &nbsp; CATEGORIES <i className='fas fa-caret-down' />
-            </a>
-           
-          </li>
-
-         
-
+   
          
           {data.map((item, i) => (
                  <li className={classes.navaitemOther}
                   key={i}
                 >
-                 &nbsp;&nbsp; &nbsp;  {item} &nbsp;  &nbsp;
-                  </li> ))}
-          
-         
-         
-        </ul>
-        
-      </nav>
+                 &nbsp;<a > {item} </a> &nbsp;  &nbsp;
+                  </li> ))}        
+        </ul>        
+    
       </div>
     </>
   );

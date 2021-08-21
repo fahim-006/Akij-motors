@@ -11,8 +11,7 @@ function Dropdown() {
        style={{height: "508px"}} 
         className={classes.dropdownamenu}>
         {sideBarData.map((item, index) => {
-          return (
-          
+          return (         
              
                 <SubMenu item={item} key={index} />
              

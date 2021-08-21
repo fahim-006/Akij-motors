@@ -1,28 +1,22 @@
-.navbar { 
-  height: 2.4vw;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-
 .navamenu {
   display: flex;
   list-style: none;
   text-align: center;
   justify-content: space-between;
+  height: 30px;
 }
 
 .navaitem {
   display: flex;
+  margin-left: 40px;
   align-items: center;
-  height: 80px;
   font-size: 14.2px;
 }
 
 .navaitemSVG {
   display: flex;
   align-items: center;
-  height: 80px;
+  margin-left: 40px;
 }
 
 
@@ -45,91 +39,206 @@
 
 }
 
-.faabars {
-  color: #fff;
-}
-
 @media screen and (max-width: 1290px){
+  .navamenu {//ul    
+    margin: 0;
+    padding: 0;
+    
+    overflow: scroll;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      height: .2px;
+      width: .1px;
+    }
+  
+    /* Track */
+  
+    &::-webkit-scrollbar-track {
+      background: #5f74b8;
+    }
+  
+    /* Handle */
+  
+    &::-webkit-scrollbar-thumb {
+      background: rgb(0, 81, 255);
+    } 
+  }
   .navaitem{
     display: none;
   }
+
   .navaitemSVG {
     display: flex;
     align-items: center;
-    height: 80px;
     margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 1026px){
-  .navbar { 
-    height: 2.9vw;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+
+  .navamenu {//ul    
+    margin: 0;
+    padding: 0;
+    
+    overflow: scroll;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      height: .2px;
+      width: .1px;
+    }
+  
+    /* Track */
+  
+    &::-webkit-scrollbar-track {
+      background: #5f74b8;
+    }
+  
+    /* Handle */
+  
+    &::-webkit-scrollbar-thumb {
+      background: rgb(0, 81, 255);
+    } 
   }
   .navaitemSVG {
     display: flex;
     align-items: center;
-    height: 80px;
+
     margin-left: 10px;
   }
 }
 
   @media screen and (max-width: 956px){
-    .navbar { 
-      height: 3.6vw;
-      display: flex;
-      justify-content: center;
-      align-items: center; 
+    .navamenu {//ul    
+      margin: 0;
+      padding: 0;
+      
+      overflow: scroll;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        height: .2px;
+        width: .1px;
+      }
+    
+      /* Track */
+    
+      &::-webkit-scrollbar-track {
+        background: #5f74b8;
+      }
+    
+      /* Handle */
+    
+      &::-webkit-scrollbar-thumb {
+        background: rgb(0, 81, 255);
+      } 
     }
+    
     .navaitemSVG {
       display: flex;
       align-items: center;
-      height: 80px;
+     
       margin-left: 10px;
     }
   }
     @media screen and (max-width: 750px){
-      .navbar { 
-        height: 6.5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
+
+      .navamenu {//ul    
+        margin: 0;
+        padding: 0;
+        
+        overflow: scroll;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+          height: .2px;
+          width: .1px;
+        }
+      
+        /* Track */
+      
+        &::-webkit-scrollbar-track {
+          background: #5f74b8;
+        }
+      
+        /* Handle */
+      
+        &::-webkit-scrollbar-thumb {
+          background: rgb(0, 81, 255);
+        } 
       }
       .navaitemSVG {
         display: flex;
         align-items: center;
-        height: 80px;
+       
         margin-left: 10px;
       }
 }
 
 @media screen and (max-width: 656px){
-  .navbar { 
-    height: 6.7vw;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+  .navamenu {//ul    
+    margin: 0;
+    padding: 0;
+    
+    overflow: scroll;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      height: .2px;
+      width: .1px;
+    }
+  
+    /* Track */
+  
+    &::-webkit-scrollbar-track {
+      background: #5f74b8;
+    }
+  
+    /* Handle */
+  
+    &::-webkit-scrollbar-thumb {
+      background: rgb(0, 81, 255);
+    } 
   }
+  
   .navaitemSVG {
     display: flex;
     align-items: center;
-    height: 80px;
+  
     margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 656px){
-  .navaitemOther{
-    font-size: 1.5vw;
+
+  .navamenu {//ul    
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    overflow: scroll;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      height: .2px;
+      width: .1px;
+    }
+  
+    /* Track */
+  
+    &::-webkit-scrollbar-track {
+      background: #5f74b8;
+    }
+  
+    /* Handle */
+  
+    &::-webkit-scrollbar-thumb {
+      background: rgb(0, 81, 255);
+    } 
   }
-  .navaitemSVG {
-    display: flex;
-    align-items: center;
-    height: 80px;
-    margin-left: 10px;
+  
+
+  .navaitemOther {//except svg and category
+    margin-right: 30px;
+    float: left;
   }
+
+
+
 }
 
   
