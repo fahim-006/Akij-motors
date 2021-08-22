@@ -42,12 +42,12 @@ const HeaderBottom = ({ show, isShow }) => {
       
         
         <ul id="idForHide" className={classes.navamenu}>
-
+        <div  onClick={()=>onMouseClick()}
+             onMouseLeave={()=>onMouseClick("hideDropdown")}>
         <li
              className={classes.navaitemSVG}
-             onClick={()=>onMouseClick()}
-             onMouseLeave={()=>onMouseClick("hideDropdown")}
-             style={{marginRight: "70px"}}    
+             
+               
           >
              <svg
                   stroke="currentColor"
@@ -57,7 +57,7 @@ const HeaderBottom = ({ show, isShow }) => {
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
-                  style={{ fontWeight: "bold"}}
+                  style={{ fontWeight: "bold", marginRight: "20px"}}
                 >
                   <path
                     fill="none"
@@ -66,11 +66,13 @@ const HeaderBottom = ({ show, isShow }) => {
                     strokeWidth="48"
                     d="M88 152h336M88 256h336M88 360h336"
                   ></path>
-                </svg> <a style={{fontWeight: "bold"}} className={classes.navaitem}>CATEGORIES</a> 
+                </svg>
                 {dropdown && <Dropdown />}
             </li>
-   
-         
+            <li className={classes.navaitem}>
+              CATEGORIES
+            </li>
+         </div>
           {data.map((item, i) => (
                  <li className={classes.navaitemOther}
                   key={i}
