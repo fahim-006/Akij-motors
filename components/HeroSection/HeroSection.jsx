@@ -1,18 +1,23 @@
 import classes from './HeroSection.module.scss';
 import HeroSlider from './HeroSlider/HeroSlider';
 import Sidebar from './Sidebar/Sidebar'
-import { Slider } from '@material-ui/core';
+import MainMenu from './Sidebar/MainMenu';
 
 const HeroSection = () => {
   return (
     <>
     <center>
-     <div className={classes.row} style={{paddingLeft: "60px",paddingRight: "60px"}}>
+     <div className={classes.row}>
 
-    <div className={classes.hide}>
-      <Sidebar/>
-    </div>
+    <div  className={classes.left}>
+      <MainMenu />
+      
+      </div>
+      
+    <div className={classes.right}>
     <HeroSlider/>
+    </div>
+    
 
   
 </div>

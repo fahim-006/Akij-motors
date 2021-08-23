@@ -83,7 +83,8 @@ const HeaderBottom = ({ show, isShow }) => {
         </ul>        
         
       </div>
-      {dropdown && <Dropdown/>}
+      <div onMouseLeave={()=>onMouseClick()}>
+      {dropdown && <Dropdown/>}</div>
     </>
   );
 }

@@ -1,17 +1,20 @@
 .sidebar {
-  background: none !important;  
- 
+  background: none !important;
+  text-align: start;  
+  width: 20vw;
   .sidebarLink {
     display: flex;
     color: #cccccc;
     padding: 5px 10px;
+    text-align: center;
     background: #194488;
     border-bottom: 1px solid #b0caf3;
     justify-content: space-between;
     align-items: center;
-    list-style: none;    
+    list-style: none;
+    
     text-decoration: none;
-    width: 290px;
+ 
    
     &:hover {
       background: #fb5d5e;
@@ -22,7 +25,7 @@
     position: absolute;
     list-style: none;
     text-align: start;
-    max-height: 501px;
+    height: 508px;   
     overflow-y: scroll;
     overflow-x: hidden;
     margin-left: 70px;
@@ -43,6 +46,7 @@
       background: rgb(0, 81, 255);
     }
   }
+  
   
   @media screen and (max-width: 1190px){
     .dropdownamenu {
