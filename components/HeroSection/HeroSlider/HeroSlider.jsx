@@ -19,11 +19,11 @@ const HeroSlider = () => {
           return (
             <div key={el}>
               <Image
-                width={1500}
-                height={780}
+                width={10000}
+                height={5000}
                 src={`/slider/slide-${item}.jpg`}
                 alt="Slider"
-                objectFit="cover"
+                background-size="contain"
                 loading="lazy"
               />
             </div>

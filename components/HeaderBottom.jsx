@@ -24,7 +24,7 @@ const HeaderBottom = ({ show, isShow }) => {
     var arr = location.split("/");
 
      if(arr[arr.length -1] == "" ||arr[arr.length -1] == "#" ){
-      setDropdown(dropdown => dropdown=true);
+      setDropdown(dropdown => dropdown=false);
     }else if (leave=="hideDropdown"){
       setDropdown(dropdown => dropdown=false);
     }else{

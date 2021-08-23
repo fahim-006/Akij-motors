@@ -1,22 +1,22 @@
 import classes from './HeroSection.module.scss';
 import HeroSlider from './HeroSlider/HeroSlider';
-import HeaderBottom from '../HeaderBottom';
+import Sidebar from './Sidebar/Sidebar'
+import { Slider } from '@material-ui/core';
 
 const HeroSection = () => {
   return (
     <>
-    
-    <div className={classes.wrapper}>
-      
-     
-        <div className={classes.left__side}>
-          
-        </div>
-        <div className={classes.right__side}>
-          <HeroSlider />
-        </div>
-     
+    <center>
+     <div className={classes.row} style={{paddingLeft: "60px",paddingRight: "60px"}}>
+
+    <div className={classes.hide}>
+      <Sidebar/>
     </div>
+    <HeroSlider/>
+
+  
+</div>
+</center>
     </>
   );
 };
