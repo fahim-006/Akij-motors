@@ -16,17 +16,15 @@ const HeaderBottom = ({ show, isShow }) => {
     'special vehicle',
   ];
 
-  const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
-  const closeMobileMenu = () => setClick(false);
 
   const onMouseClick = (leave) => {
     const location = window.location.href;
     var arr = location.split("/");
 
      if(arr[arr.length -1] == "" ||arr[arr.length -1] == "#" ){
-      setDropdown(dropdown => dropdown=false);
+      setDropdown(dropdown => dropdown=true);
     }else if (leave=="hideDropdown"){
       setDropdown(dropdown => dropdown=false);
     }else{
@@ -37,17 +35,17 @@ const HeaderBottom = ({ show, isShow }) => {
 
   return (
     <>
-    
-    <div className="relative z-50 w-full text-white bg-gradient-to-br from-akij-blue to-akij-lblue">
+   {/* className="text-white bg-gradient-to-br from-akij-blue to-akij-lblue"  */} 
+    <div className="text-white bg-gradient-to-br from-akij-blue to-akij-lblue">
       
         
         <ul id="idForHide" className={classes.navamenu}>
         <div  onClick={()=>onMouseClick()}
-             onMouseLeave={()=>onMouseClick("hideDropdown")}>
+            
+             style={{marginLeft: "40px"}}
+             >
         <li
-             className={classes.navaitemSVG}
-             
-               
+             className={classes.navaitemSVG}               
           >
              <svg
                   stroke="currentColor"
@@ -67,21 +65,25 @@ const HeaderBottom = ({ show, isShow }) => {
                     d="M88 152h336M88 256h336M88 360h336"
                   ></path>
                 </svg>
-                {dropdown && <Dropdown />}
+                
             </li>
             <li className={classes.navaitem}>
-              CATEGORIES
+              CATEGORIES              
             </li>
+           
          </div>
+         
           {data.map((item, i) => (
                  <li className={classes.navaitemOther}
                   key={i}
                 >
                  &nbsp;<a > {item} </a> &nbsp;  &nbsp;
-                  </li> ))}        
+                  </li> ))}    
+                     
         </ul>        
-    
+        
       </div>
+      {dropdown && <Dropdown/>}
     </>
   );
 }

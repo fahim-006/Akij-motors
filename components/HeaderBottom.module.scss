@@ -16,7 +16,7 @@
 .navaitemSVG {
   display:inline-block;
   align-items: center;
-  margin-left: 40px;
+ margin-left: 50px;
   margin-top: 4px;
 }
 
@@ -73,7 +73,7 @@
   .navaitemSVG {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 50px;
   }
 }
 
@@ -106,7 +106,7 @@
     display: flex;
     align-items: center;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 50px;
   }
 }
 
@@ -139,10 +139,21 @@
       display: flex;
       align-items: center;
       margin-top: 15px;
-      margin-left: 10px;
+      margin-left: 50px;
     }
   }
     @media screen and (max-width: 750px){
+
+      .navaitemOther {
+        margin-top: 6px;
+        cursor: pointer;
+        display:flex;
+        align-items: center;
+        font-size: 10px;
+        top: auto;
+        justify-content: space-between;
+        text-transform: uppercase;
+      }
 
       .navamenu {//ul    
         margin: 0;
@@ -171,7 +182,7 @@
         display: flex;
         align-items: center;
         margin-top: 15px;
-        margin-left: 10px;
+        margin-left: 50px;
       }
 }
 
@@ -204,7 +215,7 @@
     display: flex;
     align-items: center;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left:50px;
   }
 }
 
@@ -243,6 +254,7 @@
 
   .navaitemSVG{
     margin-top: 15px;
+    margin-left: 50px;
   }
 
 }
